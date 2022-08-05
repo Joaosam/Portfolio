@@ -201,7 +201,7 @@
       opacity: 0;
     }
     to {
-      transform: translateY(30%);
+      transform: translateY(40%);
       opacity: 1;
     }
   }
