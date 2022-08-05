@@ -146,7 +146,7 @@ header ul li a.active:after {
 
   nav.active .menu a {
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     display: inline-block;
     transform: translateX(0%); 
   }
