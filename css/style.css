@@ -1,0 +1,48 @@
+@import 'header.css';
+@import 'home.css';
+@import 'profile.css';
+@import 'skills.css';
+@import 'projects.css';
+@import 'footer.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family:"Saira";
+  font-size: 62.5%;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  --bg-body: #121212;
+  --bg-secundary: #151515;
+  --white: #fff;
+  --default-blue: #00AEEF;
+  --secundary-color: #6610f2;
+  --text-default: #c4c4c4;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--default-blue);
+  border-radius: .5rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-body);
+}

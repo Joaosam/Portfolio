@@ -1,0 +1,215 @@
+/* PROJECTS */
+
+.projects {
+  background-color: var(--bg-secundary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15rem;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title h1 {
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.title span {
+  color: var(--default-blue);
+}
+
+.projectsContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projectsContent .img {
+  transition: .5s;
+}
+
+.projectsContent img {
+  width: 100%;
+  height: 30rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--default-blue);
+  transition: .5s;
+  border-radius: 1rem;
+}
+
+.projectsContent .img:hover {
+  transform: scale(1.1);
+}
+
+.projectsContent .img:hover img {
+  border-color: var(--secundary-color);
+}
+
+.projectsContent .description {
+  color: var(--text-default);
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.description h3 {
+  text-align: center;
+  color: var(--white);
+}
+
+.hubkut,
+.rocketNft,
+.loginPlatform,
+.organo {
+  width: 48%;
+  position: relative;
+  margin-top: 2.4rem;
+}
+
+.loginPlatform .description a {
+  text-decoration: initial;
+  color: var(--default-blue);
+}
+
+.viewRepos a {
+  display: none;
+}
+
+.projectsContent .img:hover .viewRepos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1rem);
+  height: 100%;
+  width: 100%;
+  padding: 3.2rem 0.6rem;
+  border-radius: 1rem;
+  transition: .5s;
+  animation: tracking-in-expand .7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  text-shadow: 2px 2px 7px #000;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -1.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.viewRepos img {
+  border: none;
+  width: 5rem;
+}
+
+.viewRepos p {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.goToRepos {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 10rem 3rem;
+  }
+
+  .projects h1 {
+    font-size: 2.5rem;
+  }
+
+  .projectsContent {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .projectsContent img {
+    display: none;
+  }
+
+  .hubkut,
+  .rocketNft,
+  .loginPlatform,
+  .organo {
+    width: 100%;
+  }
+
+  .projectsContent .description {
+    padding: 2.4rem;
+    border: 1px solid var(--secundary-color);
+  }
+
+  .projectsContent .description p {
+    margin-bottom: 3rem;
+  }
+
+  .goToRepos {
+    display: initial;
+  }
+
+  .goToRepos a {
+    text-decoration: none;
+    color: var(--default-blue);
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    padding: 10rem 3rem;
+  }
+
+  .projectsContent {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .projectsContent img {
+    display: none;
+  }
+
+  .hubkut,
+  .rocketNft,
+  .loginPlatform,
+  .organo {
+    width: 100%;
+  }
+
+  .projectsContent .description {
+    padding: 2.4rem;
+    border: 1px solid var(--secundary-color);
+  }
+
+  .goToRepos {
+    display: initial;
+  }
+
+  .goToRepos a {
+    text-decoration: none;
+    color: var(--default-blue);
+  }
+}
+
+@media (min-width: 1440px) {
+  .projectsContent .img {
+    width: 80%;
+  }
+}

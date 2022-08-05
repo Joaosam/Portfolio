@@ -1,0 +1,98 @@
+/* PROFILE */
+
+.profile {
+  background-color: var(--bg-secundary);
+  padding: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 5rem;
+}
+
+.profileImage {
+  position: relative;
+}
+
+.profileImage::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: -2%;
+  left: -2%;
+  width: 30rem;
+  height: 30rem;
+  background: linear-gradient(var(--bg-secundary), var(--bg-secundary)) padding-box,
+  linear-gradient(to right, var(--default-blue), var(--secundary-color)) border-box;
+  filter: blur(0.5rem);
+  border-radius: 50%;
+  border: 5px solid transparent;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.profileImage img {
+  width: 30rem;
+  border-radius: 50%;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.description .title {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+}
+
+.description p:nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+.description .title span,
+.description .aboutMe span {
+  color: var(--default-blue);
+}
+
+.description .aboutMe {
+  color: var(--text-default);
+  font-size: 2rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .profile {
+    padding: 10rem 3rem;
+    text-align: center;
+  }
+
+  .profileImage,
+  .profileImage img,
+  .profileImage::after {
+    display: none;
+  }
+
+  .description .title {
+    font-size: 3rem;
+  }
+
+  .aboutMe {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .profile {
+    align-items: center;
+  }
+
+  .profileImage img,
+  .profileImage::after {
+    display: none;
+  }
+}

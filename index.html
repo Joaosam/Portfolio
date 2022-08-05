@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-joaosam.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio - Joaosam</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#home">
+          <code>&lsaquo;JS/&rsaquo;</code>
+        </a>
+      </div>
+      <nav class="navigation">
+        <div id="btnMobile">
+          <input type="checkbox" name="btnMobile" id="btn" />
+          <label for="btn">
+            <div class="btn"></div>
+          </label>
+        </div>
+        <ul class="menu">
+          <li>
+            <a class="goToHome" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="goToProfile" href="#profile">Sobre mim</a>
+          </li>
+          <li>
+            <a class="goToSkills" href="#skills">Conhecimentos</a>
+          </li>
+          <li>
+            <a class="goToProjects" href="#projects">Projetos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="home">
+      <div class="hello">
+        <h2>Olá, eu sou</h2>
+        <h1>João Santos</h1>
+        <h2>Desenvolvedor front-end</h2>
+        <div class="contact">
+          <div class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/jo%C3%A3o-pedro-mendes-dos-santos-3b7b3a121/"
+              target="_blank"
+            >
+              <img src="./assets/linkedin-logo.svg" alt="logo linkedin" />
+              LinkedIn
+            </a>
+          </div>
+          <div class="github">
+            <a href="https://github.com/Joaosam" target="_blank">
+              <img src="./assets/github-logo.svg" alt="logo github" />
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="developerIlustration">
+        <img
+          src="./assets/developer.svg"
+          alt="ilustração de homem programando em seu computador"
+        />
+      </div>
+
+      <div class="scrollDown">
+        <img src="./assets/scroll-down.svg" alt="Seta para baixo" />
+      </div>
+    </section>
+    <section id="profile" class="profile">
+      <div class="profileImage mediumDelay">
+        <img src="https://github.com/Joaosam.png" alt="Imagem de perfil" />
+      </div>
+      <div class="description">
+        <div class="title">
+          <h2 class="smallDelay">Sobre mim<span>.</span></h2>
+        </div>
+        <div class="aboutMe mediumDelay">
+          <p>
+            Tive meu primeiro contato com programação na faculdade de
+            tecnologia, mas acabei me afastando da área por um tempo. No
+            entanto, em abril de 2022 meu interesse por programação e tecnologia
+            voltou. E depois de ver a paixão que muitos programadores têm por
+            essa profissão, comecei a me apaixonar também. Assim, espero
+            alcançar meus objetivos como profissional da área o mais rápido
+            possível.
+          </p>
+          <p class="mediumDelay">
+            Busco uma oportunidade na áera de <span>desenvolvimento web </span>
+            com o objetivo de obter experiências, vivências e também aprimorar
+            meu desenvolvimento profissional e pessoal.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <div class="listSkills">
+        <ul>
+          <div class="top">
+            <li class="html interval">
+              <span>HTML</span>
+
+              <img src="./assets/icon-html5.svg" alt="ícone html" />
+            </li>
+            <li class="css interval">
+              <span>CSS</span>
+              <img src="./assets/icon-css3.svg" alt="ícone css" />
+            </li>
+          </div>
+          <div class="bottom">
+            <li class="js interval">
+              <span>JavaScript</span>
+              <img src="./assets/icon-javascript.svg" alt="ícone javascript" />
+            </li>
+            <li class="reactJS interval">
+              <span>ReactJS</span>
+              <img src="./assets/icon-react.svg" alt="ícone react" />
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="containerDescriptionSkills">
+        <div class="title">
+          <h3 class="smallDelay">Conhecimentos<span>.</span></h3>
+        </div>
+        <div class="description mediumDelay">
+          <p id="descriptionSkill">
+            /*passe o cursor do mouse no card para ler*/
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="title">
+        <h1 class="smallDelay">Projetos<span>.</span></h1>
+      </div>
+      <div class="projectsContent">
+        <div class="hubkut interval">
+          <div class="img">
+            <div class="viewRepos">
+              <a
+                href="https://joaosam.github.io/Hubkut/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./assets/icon-link.svg"
+                  alt="ícone simbolizando o link entre páginas web"
+                />
+                <p>Visualizar</p>
+              </a>
+            </div>
+            <img
+              src="https://raw.githubusercontent.com/Joaosam/Hubkut/master/.github/preview-hubkut.png"
+              alt="Imagem ilustrativa do Hubkut"
+            />
+          </div>
+          <div class="description">
+            <h3>Hubkut</h3>
+            <p>
+              Neste projeto a ideia é unir o layout do Orkut consumindo a API do
+              Github, carregando assim as informações do usuário do Github
+              pesquisado na página de login.
+            </p>
+            <div class="goToRepos">
+              <a href="https://joaosam.github.io/Hubkut/" target="_blank"
+                >Visualizar Projeto</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="rocketNft interval">
+          <div class="img">
+            <div class="viewRepos">
+              <a
+                href="https://joaosam.github.io/Rocket-NFT/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./assets/icon-link.svg"
+                  alt="ícone simbolizando o link entre páginas web"
+                />
+                <p>Visualizar</p>
+              </a>
+            </div>
+            <img
+              src="https://raw.githubusercontent.com/Joaosam/Rocket-NFT/master/.github/preview-nft.png"
+              alt="Imagem ilustrativa da página Rocket-NFT"
+            />
+          </div>
+          <div class="description">
+            <h3>Rocket-NFT</h3>
+            <p>
+              Com maior intenção de reforçar os conceitos de HTML e CSS,
+              desenvolvi esta landing page, a Rocket-NFT.
+            </p>
+            <div class="goToRepos">
+              <a href="https://joaosam.github.io/Rocket-NFT/" target="_blank"
+                >Visualizar Projeto</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="loginPlatform interval">
+          <div class="img">
+            <div class="viewRepos">
+              <a
+                href="https://joaosam.github.io/login-hiplatform/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./assets/icon-link.svg"
+                  alt="ícone simbolizando o link entre páginas web"
+                />
+                <p>Visualizar</p>
+              </a>
+            </div>
+            <img
+              src="https://raw.githubusercontent.com/Joaosam/login-hiplatform/master/.github/login-hi.png"
+              alt="Imagem ilustrativa da tela de login da HiPlatform"
+            />
+          </div>
+          <div class="description">
+            <h3>Login HiPlatform</h3>
+            <p>
+              Trabalhando com HTML, CSS e JS, a ideia desse projeto foi replicar
+              a tela de login da
+              <a
+                href="https://www3.directtalk.com.br/static/beta/admin/login.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span> HiPlatform.</span>
+              </a>
+            </p>
+            <div class="goToRepos">
+              <a
+                href="https://joaosam.github.io/login-hiplatform/"
+                target="_blank"
+                >Visualizar Projeto</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="organo interval">
+          <div class="img">
+            <div class="viewRepos">
+              <a
+                href="https://organo-ivory.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./assets/icon-link.svg"
+                  alt="ícone simbolizando o link entre páginas web"
+                />
+                <p>Visualizar</p>
+              </a>
+            </div>
+            <img
+              src="https://raw.githubusercontent.com/Joaosam/organo/master/public/assets/world-cup.jpg"
+              alt="Imagem ilustrativa da página Organo"
+            />
+          </div>
+          <div class="description">
+            <h3>Organo</h3>
+            <p>
+              Trabalhando com meu primeiro projeto em React. Aqui o objetivo é
+              criar o seu melhor time de futebol de todos os tempos, colocando o
+              nome, time, endereço da imagem e posição de cada jogador.
+            </p>
+            <div class="goToRepos">
+              <a href="https://organo-ivory.vercel.app/" target="_blank"
+                >Visualizar Projeto</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; <span id="currentDate"></span> Joaosam</p>
+      <p>Desenvolvido por <code>&lsaquo;JS/&rsaquo;</code></p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

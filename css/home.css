@@ -1,0 +1,259 @@
+/* HOME */
+
+#home {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15rem;
+}
+
+.hello,
+.scrollDown {
+  color: var(--text-default);
+  animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(1.2rem);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.hello h1 {
+  text-transform: uppercase;
+  color: var(--default-blue);
+  font-size: 5rem;
+  animation: blinkCursor 500ms steps(12) infinite normal, typing 2.5s 0.2s steps(12) normal;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--secundary-color);
+  width: 76%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 76%;
+  }
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: var(--secundary-color);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.hello h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3.2rem;
+}
+
+.contact .github img {
+  width: 2rem;
+}
+
+.contact .linkedin img {
+  width: 1.6rem;
+}
+
+.contact .linkedin,
+.contact .github {
+  border-radius: 1rem;
+}
+
+.contact .linkedin a,
+.contact .github a {
+  font-size: 2rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: var(--text-default);
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contact .linkedin:hover {
+  animation: shadow-inset-center-linkedin 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both reverse;
+
+}
+
+.contact .github:hover {
+  animation: shadow-inset-center-github 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both reverse;
+}
+
+.contact .linkedin {
+  box-shadow: inset 0px 0 12px 0 var(--default-blue),
+  inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contact .github {
+  box-shadow: inset 0px 0 12px 0 var(--secundary-color),
+  inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+@keyframes shadow-inset-center-linkedin {
+  0% {
+    box-shadow: inset 0px 0 15px 0 var(--default-blue);
+  }
+  100% {
+    box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes shadow-inset-center-github {
+  0% {
+    box-shadow: inset 0 0 15px 0 var(--secundary-color);
+  }
+  100% {
+    box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+.developerIlustration img {
+  width: 40rem;
+  animation: pulse 1.5s linear alternate infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.scrollDown {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 3rem;
+    height: 90vh;
+  }
+
+  .hello h1 {
+    width: 68%;
+    font-size: 3rem;
+  }
+
+  .hello h2 {
+    font-size: 2.5rem;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 68%;
+    }
+  }
+
+  .contact {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .developerIlustration {
+    display: none;
+  }
+
+  .scrollDown {
+    display: block;
+    position: absolute;
+    bottom: 15%;
+  }
+
+  .scrollDown img {
+    width: 5rem;
+    animation: scrollDown 1s ease-in-out alternate infinite;
+  }
+
+  @keyframes scrollDown {
+    from {
+      opacity: 0;
+    }
+    to {
+      transform: translateY(30%);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #home {
+    padding-inline: 3rem;
+  }
+
+  .developerIlustration img {
+    width: 28rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #home {
+    height: 90vh;
+  }
+
+  .hello h1 {
+    width: 72%;
+    font-size: 6rem;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 72%;
+    }
+  }
+
+  .hello h2 {
+    font-size: 4rem;
+  }
+
+  .developerIlustration img {
+    width: 50rem;
+  }
+
+  .contact .linkedin a,
+  .contact .github a {
+    font-size: 2.5rem;
+}
+
+.contact .github img {
+  width: 2.5rem;
+}
+
+.contact .linkedin img {
+  width: 2rem;
+}
+}
