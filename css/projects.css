@@ -61,13 +61,15 @@
   color: var(--white);
 }
 
-.hubkut,
-.rocketNft,
-.loginPlatform,
-.organo {
+.project {
   width: 48%;
   position: relative;
   margin-top: 2.4rem;
+}
+
+.project:nth-child(3) a {
+  text-decoration: none;
+  color: var(--default-blue);
 }
 
 .loginPlatform .description a {
@@ -146,10 +148,7 @@
     display: none;
   }
 
-  .hubkut,
-  .rocketNft,
-  .loginPlatform,
-  .organo {
+  .project {
     width: 100%;
   }
 
@@ -166,7 +165,8 @@
     display: initial;
   }
 
-  .goToRepos a {
+  .goToRepos a,
+  .project:nth-child(3) a {
     text-decoration: none;
     color: var(--default-blue);
   }
@@ -186,10 +186,7 @@
     display: none;
   }
 
-  .hubkut,
-  .rocketNft,
-  .loginPlatform,
-  .organo {
+  .project {
     width: 100%;
   }
 
@@ -202,9 +199,14 @@
     display: initial;
   }
 
-  .goToRepos a {
+  .goToRepos a,
+  .project:nth-child(3) a {
     text-decoration: none;
     color: var(--default-blue);
+  }
+
+  footer {
+    padding: 2rem 3rem !important;
   }
 }
 
