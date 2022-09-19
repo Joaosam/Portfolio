@@ -2,8 +2,7 @@ const btnMobile = document.getElementById('btnMobile')
 
 const toggleMenu = () => {
   const nav = document.querySelector('.navigation')
-  const toggleNav = nav.classList.toggle('active')
-  console.log(toggleNav)
+  nav.classList.toggle('active')
 
   const classTagA = [
     '.goToHome',
