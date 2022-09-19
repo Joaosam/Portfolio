@@ -13,7 +13,6 @@ const toggleMenu = () => {
 
   classTagA.forEach(currentValueClass => {
     const startCloseMenu = document.querySelector(`${currentValueClass}`)
-
     startCloseMenu.addEventListener('click', closeMenu)
   })
 
